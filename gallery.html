@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <title>Gallery | Mint Nails &amp; Spa</title>
+    <meta name="description" content="Image gallery of services and nail designs from Mint Nails &amp; Spa in Lake Mary, Florida." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <script defer src="gallery.js"></script>
+  </head>
+  <body class="gallery-page">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="index.html" class="brand-link" aria-label="Mint Nails &amp; Spa">
+            <img src="logo.png" alt="Mint Nails &amp; Spa logo" class="logo-image" />
+            <span class="brand-text">
+              <span class="logo">Mint Nails &amp; Spa</span>
+              <span class="tagline">Lake Mary, Florida</span>
+            </span>
+          </a>
+        </div>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html#home" class="nav-item">
+            <span class="nav-text">Home</span>
+            <span class="nav-desc">Back to main page</span>
+          </a>
+          <a href="services.html" class="nav-item">
+            <span class="nav-text">Services</span>
+            <span class="nav-desc">Manicure, Pedicure, Gel</span>
+          </a>
+          <a href="gallery.html" class="nav-item active">
+            <span class="nav-text">Gallery</span>
+            <span class="nav-desc">Real salon photos</span>
+          </a>
+          <a href="index.html#location" class="btn btn-primary">Salon Location</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery-hero">
+        <div class="container gallery-hero-inner">
+          <div class="gallery-copy">
+            <span class="gallery-kicker">Mint Nails &amp; Spa</span>
+            <h1>A professional gallery for the salon's full photo collection</h1>
+            <p>A clean, elevated space for clients to explore nail sets, service photos, and design inspiration from the salon.</p>
+            <div class="gallery-actions">
+              <a href="#galleryGrid" class="btn btn-primary">View All Photos</a>
+              <a href="index.html#booking" class="btn btn-outline">Book Now</a>
+            </div>
+          </div>
+          <div class="gallery-highlight">
+            <button class="gallery-highlight-card large" type="button" data-full="image/2026-02-18.jpg" data-alt="Featured nail look 1">
+              <img src="image/2026-02-18.jpg" alt="Featured nail look 1" loading="eager" />
+              <span class="gallery-highlight-label">Tap to enlarge</span>
+            </button>
+            <button class="gallery-highlight-card" type="button" data-full="image/2026-02-19.jpg" data-alt="Featured nail look 2">
+              <img src="image/2026-02-19.jpg" alt="Featured nail look 2" loading="eager" />
+              <span class="gallery-highlight-label">Featured design</span>
+            </button>
+            <button class="gallery-highlight-card" type="button" data-full="image/2026-02-22.png" data-alt="Featured nail look 3">
+              <img src="image/2026-02-22.png" alt="Featured nail look 3" loading="eager" />
+              <span class="gallery-highlight-label">View details</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-stats">
+        <div class="container gallery-stats-grid">
+          <article class="gallery-stat-card">
+            <strong>36+</strong>
+            <span>Real images sourced from the `image` folder</span>
+          </article>
+          <article class="gallery-stat-card">
+            <strong>Premium</strong>
+            <span>A neatly arranged and polished gallery experience</span>
+          </article>
+          <article class="gallery-stat-card">
+            <strong>Lake Mary</strong>
+            <span>Shoppes at Oakmonte, Florida</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section gallery-canvas" id="galleryGrid">
+        <div class="container">
+          <div class="section-heading gallery-heading">
+            <div>
+              <h2 class="section-title">All Images</h2>
+              <p class="section-lead">Click any image to view it larger. Every image below is pulled directly from the project's image folder.</p>
+            </div>
+          </div>
+          <div class="gallery-masonry" id="galleryMasonry"></div>
+        </div>
+      </section>
+
+      <section class="section gallery-location-section" id="galleryLocation">
+        <div class="container">
+          <div class="gallery-location-card">
+            <div class="gallery-location-copy">
+              <span class="gallery-kicker">Salon Information</span>
+              <h2 class="section-title">Visit Mint Nails &amp; Spa in Lake Mary</h2>
+              <p class="section-lead">More than just a photo page, this section helps clients find the salon, contact the team quickly, and get a clear feel for the experience before booking.</p>
+              <div class="gallery-location-list">
+                <div><strong>Address</strong><span>1210 S International Pkwy #134, Lake Mary, FL 32746, USA</span></div>
+                <div><strong>Hours</strong><span>9:30 AM - 7:30 PM daily</span></div>
+                <div><strong>Contact</strong><span><a href="tel:+14078780096">+1 407-878-0096</a></span></div>
+              </div>
+              <div class="gallery-actions">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=1210+S+International+Pkwy+%23134,+Lake+Mary,+FL+32746" class="btn btn-primary" target="_blank" rel="noreferrer">Get Directions</a>
+                <a href="index.html#booking" class="btn btn-outline">Book Now</a>
+              </div>
+            </div>
+            <div class="gallery-location-map">
+              <iframe
+                title="Mint Nails & Spa map"
+                src="https://www.google.com/maps?q=1210%20S%20International%20Pkwy%20%23134%2C%20Lake%20Mary%2C%20FL%2032746&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="gallery-lightbox" id="galleryLightbox" hidden>
+      <button class="gallery-lightbox-close" id="galleryLightboxClose" aria-label="Close">×</button>
+      <button class="gallery-lightbox-nav prev" id="galleryPrev" aria-label="Previous image">‹</button>
+      <div class="gallery-lightbox-stage">
+        <img id="galleryLightboxImage" src="" alt="" />
+        <div class="gallery-lightbox-meta">
+          <span id="galleryLightboxCount">1 / 1</span>
+        </div>
+      </div>
+      <button class="gallery-lightbox-nav next" id="galleryNext" aria-label="Next image">›</button>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="footer-eyebrow">Mint Nails &amp; Spa</span>
+          <strong>Shoppes at Oakmonte</strong>
+          <p>1210 S International Pkwy #134, Lake Mary, FL 32746, USA</p>
+          <div class="footer-pills">
+            <span>Gallery</span>
+            <span>Manicure</span>
+            <span>Pedicure</span>
+            <span>Nail Art</span>
+          </div>
+        </div>
+
+        <div class="footer-card">
+          <h3>Quick Info</h3>
+          <ul class="footer-list">
+            <li>So dien thoai: <a href="tel:+14078780096">+1 407-878-0096</a></li>
+            <li>Hours: 9:30 AM - 7:30 PM</li>
+            <li><a href="https://search.google.com/local/writereview?placeid=ChIJ_ysF43Vz54gRpvKacZie3-s" target="_blank" rel="noreferrer">Write a Google Review</a></li>
+            <li><a href="index.html#booking">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-card">
+          <h3>What This Gallery Offers</h3>
+          <p>Real images, a clean layout, and a full-screen viewing experience that helps clients choose a style before visiting the salon.</p>
+          <a href="#galleryGrid" class="footer-link">Back to the photo list</a>
+        </div>
+      </div>
+      <button class="to-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    </footer>
+  </body>
+</html>
